@@ -1,0 +1,3 @@
+[submodule "lib/ForecastIOLibrary"]
+	path = lib/ForecastIOLibrary
+	url = https://github.com/kushanj1/ForecastIOLibrary.git

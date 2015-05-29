@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.nalabelle.weather.WeatherDisplay"
+    android:id="@+id/current_status">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView1"
+        android:layout_row="12"
+        android:layout_column="9"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Today" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/todayStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tomorrow"
+        android:id="@+id/textView3"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/todayNormal"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tomorrowStatus"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/todayStatus"
+        android:layout_alignStart="@+id/todayStatus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/todayNormal"
+        android:layout_below="@+id/todayStatus"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tomorrowNormal"
+        android:layout_below="@+id/tomorrowStatus"
+        android:layout_alignLeft="@+id/todayNormal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/todayChill"
+        android:layout_below="@+id/todayNormal"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tomorrowChill"
+        android:layout_below="@+id/tomorrowNormal"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

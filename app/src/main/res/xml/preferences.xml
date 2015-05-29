@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Temperature Models"
+        android:key="pref_key_tempmodels">
+        <CheckBoxPreference
+            android:key="pref_weathermodel1"
+            android:title="@string/pref_weathermodel1"
+            android:summary="@string/pref_weathermodel1_summary"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:key="pref_weathermodel2"
+            android:title="@string/pref_weathermodel2"
+            android:summary="@string/pref_weathermodel2_summary"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Forecast API"
+        android:key="pref_key_api">
+    <EditTextPreference
+        android:key="pref_apikey"
+        android:title="@string/pref_apikey"
+        android:summary="@string/pref_apikey_summary"
+        android:defaultValue=""
+        android:singleLine="true"
+        android:maxLines="1"
+        android:selectAllOnFocus="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Notifications"
+        android:key="pref_key_notifications">
+    <CheckBoxPreference
+        android:key="pref_notifications"
+        android:title="@string/pref_title_notifications"
+        android:defaultValue="true" />
+
+    <!-- NOTE: RingtonePreference's summary should be set to its value by the activity code. -->
+    <RingtonePreference
+        android:dependency="pref_notifications"
+        android:key="pref_notifications_ring"
+        android:title="@string/pref_title_ringtone"
+        android:ringtoneType="notification"
+        android:defaultValue="content://settings/system/notification_sound" />
+
+    <CheckBoxPreference
+        android:dependency="pref_notifications"
+        android:key="pref_notifications_vibrate"
+        android:title="@string/pref_title_vibrate"
+        android:defaultValue="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
