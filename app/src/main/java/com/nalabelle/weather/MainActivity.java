@@ -22,7 +22,8 @@ public class MainActivity extends Activity implements
         ConnectionCallbacks, OnConnectionFailedListener,
         WeatherDisplay.OnFragmentInteractionListener {
 
-    protected static final String TAG = "basic-location-sample";
+    protected static final String TAG = "Weather-Main";
+    // Forecast.IO API Key goes here for now
     protected static String API_KEY = "";
 
     /**
